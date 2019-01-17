@@ -1,0 +1,25 @@
+﻿@model WebBootstart01.Models.Employee
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>UpdateEmployee</title>
+</head>
+<body>
+    <div>
+        <div>
+            <form action="/employee/UpdateEmployee" method="Post">
+                姓名：<input type="text" name="Name" value="@Model.Name">
+                工资：<input type="text" name="Salary" value="@Model.Salary">
+                <input type="hidden" name="Id" value="@Model.Id">
+                <input type="submit" value="更新"><input type="reset" value="取消">
+            </form>
+        </div> 
+    </div>
+</body>
+</html>

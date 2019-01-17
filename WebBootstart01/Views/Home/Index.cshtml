@@ -1,0 +1,57 @@
+﻿@using WebBootstart01.Models;
+@model Weather
+
+@{ 
+    ViewBag.Title = "Index";
+}
+
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=Ucxgmr7mGvG2NXVNoWGjO8BqSGVbCrhd"></script>
+
+<div class="jumbotron">
+    <h1>2017软件技术2班</h1>
+    <p class="lead">案例教程</p>
+    <p><a href=""http://go.microsoft.com/fwlink/?LinkId=301865"></a></p>
+</div>
+<h3>今日天气：@Model.City </h3>
+<ul>
+    <li>天气:@Model.Temperature</li>
+    <li>湿度:@Model.Humidity<li>
+</ul>
+<h3 id="city"></h3>
+<p id="weatherInfo"></p>
+
+<body>
+    <div id="allmap"></div>
+</body>
+
+
+
+<script type="text/javascript">
+	
+	var map = new BMap.Map("allmap"); 
+	map.centerAndZoom(new BMap.Point(116.404, 39.915), 11);
+	map.centerAndZoom(point, 12);
+	
+	var geolocation = new Bmap.Geolocation();
+	geolocation.getCurrentPosition(function (r) {
+	    console.log(r.address.city);
+	    var ajax = new XMLHttpRequest();
+	    ajax.open("POST", "../home/getWeather.php", true);
+	    ajax.setRequestHeader("Content-type", "application/x-ww-form-urlencoded");
+	    ajax.send("city=" + r.address.city);
+	    ajax.responseType = "json";
+	    ajax.onload = function () {
+	        if (ajax.status === 200) {
+	            json = ajax.response;
+	            document.querySelector("#city").textContent = json.City;
+	            document.querySelector("#temperature").textContent = json.City;
+	            document.querySelector("#humidity").textContent = json.City;
+	            console.log(json);
+	        }
+	        else {
+                console.log('网络请求products.json失败,响应码'+ajax.status+':'+ajax.statusText)
+	        }
+	    }
+	})
+</script>
+

@@ -1,0 +1,51 @@
+﻿@using WebBootstart01.Models
+@model Client
+@{
+    Layout = null;
+
+    //Client emp = ViewBag.CTKey;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+        <h1>你好,@Model.UserName</h1>
+        <hr/>
+        <div>
+            <b>员工信息</b><br/>
+            姓名：@Model.EmployeeName<br />
+            工资：@Model.Salary<br />
+            级别：@Model.SalaryGrade
+        </div>
+    @*<div> 
+        <h1>@emp.Name,@(ViewBag.greeting)</h1>
+        <h2>员工信息</h2>
+        <p>姓名：@emp.Name</p>
+        <p>工资：@emp.Salary.ToString("c")</p>
+        <p>
+            @{
+            if (emp.Salary<5000)
+            {
+                    <p>哈哈,我是有钱人</p>
+                }
+                else
+                {
+                    <p>咸鱼得很</p>
+                }
+            }            
+        </p>
+        <hr/>
+    </div>
+    <div>
+        <h1>@emp.Client,@(ViewBag.greeting)</h1>
+        <h2>客户信息</h2>
+        <p>客户姓名：@emp.Client</p>
+        <p>会员等级：@emp.From</p>
+    </div>*@
+</body>
+</html>

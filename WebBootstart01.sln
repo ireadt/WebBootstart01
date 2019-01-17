@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebBootstart01", "WebBootstart01\WebBootstart01.csproj", "{34348AB4-0C88-4F55-9A42-5079EE8E29F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.csproj", "{C5349E98-6717-4A60-83D4-0A948D45E640}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContosoUniversity", "ContosoUniversity\ContosoUniversity.csproj", "{8C4CB09C-C056-4E35-9255-78F70797D4A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebTianqi", "WebTianqi\WebTianqi.csproj", "{7FD438CA-A264-47C5-8640-14229FD638AC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{34348AB4-0C88-4F55-9A42-5079EE8E29F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34348AB4-0C88-4F55-9A42-5079EE8E29F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34348AB4-0C88-4F55-9A42-5079EE8E29F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34348AB4-0C88-4F55-9A42-5079EE8E29F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5349E98-6717-4A60-83D4-0A948D45E640}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5349E98-6717-4A60-83D4-0A948D45E640}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5349E98-6717-4A60-83D4-0A948D45E640}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5349E98-6717-4A60-83D4-0A948D45E640}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C4CB09C-C056-4E35-9255-78F70797D4A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C4CB09C-C056-4E35-9255-78F70797D4A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C4CB09C-C056-4E35-9255-78F70797D4A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C4CB09C-C056-4E35-9255-78F70797D4A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FD438CA-A264-47C5-8640-14229FD638AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FD438CA-A264-47C5-8640-14229FD638AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FD438CA-A264-47C5-8640-14229FD638AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FD438CA-A264-47C5-8640-14229FD638AC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,47 @@
+﻿@model WebBootstart01.ViewModels.EmployeeListViewModel
+
+
+@{
+    Layout ="~/Views/Shared/MyLayOut.cshtml";
+
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>MyView</title>
+</head>
+<body>
+    <form action="/employee/search" method="post">
+        <input type="text" name="searchString" value=""/>
+        <input type="submit" name="搜索" />
+    </form>
+
+
+    <h2>@Model.Greeting,@Model.UserName</h2>
+    <hr />
+    <div>
+        <p>
+            <a href="/employee/addNew">新增</a>
+        </p>
+        <table>
+            @foreach (var item in Model.Employees)
+            {
+                <li>姓名:@item.EmployeeName||工资:@item.EmployeeSalary||等级:@item.SalaryGrade<a href="/employee/delete/@item.EmployeeId">删除</a>||<a href="/employee/Edit/@item.EmployeeName,@item.EmployeeSalary">更改</a></li>
+
+
+                @*<tr>
+                    <td><a href=""></a></td>
+                    <td>@item.EmployeeName||@item.EmployeeSalary||@item.SalaryGrade
+                    <a href="/employee/delete/@item.EmployeeId"> 删除</a>
+                    <a href="/employee/UpdateEmployee/@item.EmployeeId">修改</a>
+                    </td>
+                    
+                </tr>*@
+            }
+        </table>
+    </div>
+</body>
+</html>
